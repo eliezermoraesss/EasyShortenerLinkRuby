@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encurtador de Links</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <% if notice %>
+      <div class="bg-green-100 p-4">
+        <p class="text-green-700"><%= notice %></p>
+      </div>
+    <% end %>
+    
+    <%= yield %>
+  </body>
+</html>
