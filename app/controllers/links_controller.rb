@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
   def index
-    @link = Link.new
-    @links = Link.order(created_at: :desc)
+    @link = Link.new                    # Para o formulário
+    @links = Link.order(created_at: :desc)  # Lista de links
   end
   
   def create
